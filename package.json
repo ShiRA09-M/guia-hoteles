@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de node.js",
+  "main": " index.html\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[\u001b[\u001b[C\u001b[Cjs",
+  "scripts": {
+    "test": "(\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Ardianamont@bitbucket.org/ShiRA09/guia-hoteles.git"
+  },
+  "author": "Ardiana M",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ShiRA09/guia-hoteles#readme"
+}
