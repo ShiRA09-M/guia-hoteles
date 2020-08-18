@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Nuestro primer proyecto de nodejs\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C.\u001b[Cjs",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
