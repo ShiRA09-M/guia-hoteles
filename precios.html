@@ -168,24 +168,53 @@
     </div> 
     <div class="tab-pane fade" id="tarjetas" role="tabpanel" 
     area-labelledby="tarjetas-tab">
-
-        <div class="d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-        <div class="card-header" style="background-color: blue;
-          color: white;">  
-          Tarjetas Aceptadas  
+      <div class="accordion" id="accordionTarjetas">
+        <div class="card">
+          <div class="card-header id="heading0ne>
+           <h5 class="mb-0">
+             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" area-expanded="true"
+             area-controls="collapseBasica">Tarjeta Básica</button> 
+           </h5> 
+        </div> 
+        <div id="collapseBasica" class="collapse show" area-labelledby="heading0ne" data-parent="#accordionTarjetas">
+        <div class="card-body">
+          Podes reservar en 3 cuotas sin interés.
+        </div> 
+      </div> 
+    </div> 
+    <div class="card">
+      <div class="card-header id="headingTwo>
+       <h5 class="mb-0">
+         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVIP" area-expanded="false"
+         area-controls="collapseVIP">Tarjeta VIP</button> 
+        </h5>
+      </div> 
+      <div id="collapseVIP" class="collapse" area-labelledby="headingTwo" data-parent="#accordionTarjetas">
+        <div class="card-body">
+          Podes reservsr en 6 cuotas sin interés. 
+          Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia.
         </div>
-        <ul class="list-group list-group-flusb">
-        <li class="list-group-item">Tarjeta Básica</li>
-        <li class="list-group-item">Tarjeta Vip</li> 
-        <li class="list-group-item">Tarjeta Black</li>    
-      </ul>   
-    </div>
-  </div>
+        </div>  
+        </div>
+        <div class="card">
+          <div class="card-header id="headingThree>
+           <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBlack" area-expanded="false"
+         area-controls="collapseBlack">Tarjeta Black</button>  
+        </h5>
+      </div> 
+      <div id="collapseBlack" class="collapse" area-labelledby="headingThree" data-parent="#accordionTarjetas">
+        <div class="card-body">
+          Podes reservar en 12 cuotas sin interés.
+          Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia y un acceso al gimnasio y spa todos los dias de tu vacaciones.
+        </div>
+      </div>  
+      </div> 
+    </div> 
 
-  </div>
-   <div class="tab-pane fade" id="comentarios" role="tabpanel" 
-   area-labelledby="comentarios-tab">Comentarios</div>
+    </div> 
+     <div class="tab-pane fade" id="comentarios" role="tabpanel" 
+         area-labelledby="comentarios-tab">Comentarios</div>
   </div>
 
   </div>
