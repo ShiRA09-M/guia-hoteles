@@ -80,7 +80,8 @@
                 <div class="card-header">España</div>
                 <div class="card-body">
                     <h5 class="card-title">Hotel Barcelona</h5>
-                    <p class="card-text">Hotel ubicado en pleno centro de Barcelona</p>
+                    <p class="card-text">Hotel ubicado en pleno centro de Barcelona, a metro de keent.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                     </div>
                     <div><button class="btn btn-primary btn-reserva">
                          <span class="oi oi-plus"></span> Reservar</button></div>
@@ -91,6 +92,7 @@
                 <div class="card-body">
                    <h5 class="card-title">Hotel Buenos Aires</h5>
                    <p>Hotel ubicado en pleno centro de la ciudad. </p>
+                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                    </div>
                    <div><button class="btn btn-primary btn-reserva">
                            <span class="oi oi-plus"></span> Reservar</button></div>
@@ -100,7 +102,8 @@
                 <div class="card-header">Perú</div> 
                 <div class="card-body">    
                    <h5 class="card-title">Hotel Lima</h4>
-                   <p>Hotel ubicado en pleno centro. </p>
+                   <p>Hotel ubicado en pleno centro, de la ciudad Lima. </p>
+                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                    </div>
                    <div><button class="btn btn-primary btn-reserva">
                           <span class="oi oi-plus"></span> Reservar</button></div>
@@ -111,6 +114,7 @@
               <div class="card-body">  
                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
                    <p>Hotel ubicado en pleno centro de Rio de Janeiro. </p>
+                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                    </div>
                    <div><button class="btn btn-primary btn-reserva">
                          <span class="oi oi-plus"></span> Reservar</button></div>
@@ -121,34 +125,45 @@
               <div class="card-body">  
                  <h5 class="card-title">Hotel Punta Cana</h5> 
                  <p>Hotel ubicado a unos cuantos kilometros del centro. </p>
+                 <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                  </div>
                  <div><button class="btn btn-primary btn-reserva">
                          <span class="oi oi-plus"></span> Reservar</button></div>
           </div>
-          <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
-              <img src="images/hotel ald.jpg" class="img-fluid" alt="Responsive image">
-              <div class="card-body">  
-                 <h5 class="card-title">Hotel La Aldea</h5>
-                 <h6 class="card-subtitle text-muted">Rep. Dominicana</h6>
-                 <p>Hotel ubicado en pleno centro de la ciuda Santo Domingo. </p>
-                 </div>
-                 <div><button class="btn btn-primary btn-reserva">
-                         <span class="oi oi-plus"></span> Reservar</button></div>
-          </div>
-          <div class="card card-hotel  d-flex flex-column justify-content-between ml-2">
-                <img src="images/hotel vill.jfif" class="img-fluid" alt="Responsive image">
-                <div class="card-body">  
-                 <h5 class="card-title" >Hotel Villa Colonial</h5>
-                <h6 class="card-subtitle text-muted">Rep. Dominicana</h6>
-                 <p>Hotel en Zona Colonia Santo Domingo. </p>
-                 </div>
-                 <div><button class="btn btn-primary btn-reserva">
-                         <span class="oi oi-plus"></span> Reservar</button></div>
+         
              </div>
          </div>
      </div>
+     <div class="modal fadel" id="contacto" tabindex="1" role="dialog" area-labelledby="exampleModalLabel"area-hidden="true"> 
+       <div class="modal-dialog" role="document"> 
+         <div class="modal-content">  
+           <div class="modal-header"> 
+             <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5> 
+             <button type="button" class="close" data-dismiss="modal" area-label="Close">
+               <span area-hidden="true">&times;</span>     
+             </button>
+           </div>
+           <div class="modal-body"> 
+             <form>
+               <div class="form-group">  
+                 <label for="recipient-name" class="col-form-label">Tu email:</label>
+                 <input type="text" class="form-control" id="recipient-name"> 
+               </div> 
+               <div class="form-group">
+                 <label for="message-text" class="col-form-label">Mensaje:</label>
+                 <textarea class="text" class="form-control" id="message-text"></textarea>
+               </div>
+             </form>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-success">Enviar</button>>
+           </div>
+         </div> 
+       </div>
+     </div>
+   </div>
 
-    <footer>
+   <footer>
         <div class="row">
             <div class="col-sm-4 d-flex flex-column">
                 <a href="https://www.facebook.com">facebook</a>
