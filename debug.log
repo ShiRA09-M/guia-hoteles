@@ -313,3 +313,6 @@
 [0913/004919.102:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0913/004938.985:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0913/010246.091:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0913/140735.605:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0913/155740.817:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0913/203511.033:ERROR:crash_report_database_win.cc(469)] failed to stat report
