@@ -108,7 +108,7 @@
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas, cuentan con una presentación teatrar gratis!">Hotel Barcelona</h5>
                     <p class="card-text">Hotel ubicado en pleno centro de Barcelona, a metro de keent.</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                     </div>
                     <div><button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultá las promociones vigentes">
                          <span class="oi oi-plus"></span> Reservar</button></div>
@@ -119,7 +119,7 @@
                 <div class="card-body">
                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas, cuentan con clases de tango gratis!">Hotel Buenos Aires</h5>
                    <p>Hotel ubicado en pleno centro de la ciudad. </p>
-                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                    </div>
                    <div><button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultá las promociones vigentes">
                            <span class="oi oi-plus"></span> Reservar</button></div>
@@ -130,7 +130,7 @@
                 <div class="card-body">    
                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas, cuentan con vistas guiadas al Machu Picchu gratis!">Hotel Lima</h5>
                    <p>Hotel ubicado en pleno centro, de la ciudad Lima. </p>
-                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                    </div>
                    <div><button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultá las promociones vigentes">
                           <span class="oi oi-plus"></span> Reservar</button></div>
@@ -141,7 +141,7 @@
               <div class="card-body">  
                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas, cuentan con un espectáculo de samba gratis!   ">Hotel Rio de Janeiro</h5>
                    <p>Hotel ubicado en pleno centro de Rio de Janeiro. </p>
-                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                   <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                    </div>
                    <div><button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultá las promociones vigentes">
                          <span class="oi oi-plus"></span> Reservar</button></div>
@@ -152,7 +152,7 @@
               <div class="card-body">  
                  <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas, cuentan con una visita a la Isla Saona gratis!">Hotel Punta Cana</h5> 
                  <p>Hotel ubicado a unos cuantos kilometros del centro. </p>
-                 <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                 <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                  </div>
                  <div><button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultá las promociones vigentes">
                          <span class="oi oi-plus"></span> Reservar</button></div>
@@ -229,7 +229,26 @@
       $('.carousel').carousel({
           interval: 2000
       });
-    });
+      $('#contacto').on('show.bs.modal', function (e){
+        console.log('el modal contacto se está mostrando');
+
+        $('#contacto').removeClass('btn-outline-success'); 
+        $('#contacto').addClass('btn-primery'); 
+        $('#contacto').prop('disabled', true);
+
+      }); 
+     $('#contacto').on('show.bs.modal', function (e){
+        console.log('el modal contacto se mostró');
+     }); 
+     $('#contacto').on('show.bs.modal', function (e){
+        console.log('el modal contacto se oculta');
+     });  
+     $('#contacto').on('show.bs.modal', function (e){
+        console.log('el modal contacto se ocultó');
+        $('#contacto').prop('disabled', false);
+     });  
+  
+  
   
   </script>
 
